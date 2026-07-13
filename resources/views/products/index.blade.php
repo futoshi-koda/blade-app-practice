@@ -7,19 +7,19 @@
     <style>
         body {
             font-family: sans-serif;
-            margin: 20px;
+            margin: 50px;
         }
 
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
         }
 
         th,
         td {
             border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
+            padding: 5px;
+            text-align: center;
         }
 
         th {
@@ -51,6 +51,7 @@
             <tr>
                 <th>No.</th>
                 <th>商品名</th>
+                <th>型番</th>
                 <th>カテゴリ</th>
                 <th>価格</th>
                 <th>在庫状況</th>
@@ -61,6 +62,7 @@
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $product->name }}</td>
+                    <td>{{ $product->model }}</td>
                     <td><span class="category">{{ $product->category }}</span></td>
                     <td>¥{{ number_format($product->price) }}</td>
                     <td>

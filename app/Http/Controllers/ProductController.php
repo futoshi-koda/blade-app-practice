@@ -13,18 +13,28 @@ class ProductController extends Controller
                 'category' => '電子機器',
                 'price' => 89800,
                 'in_stock' => true,
+                'model' => 'AB123Z',
             ],
             (object) [
                 'name' => 'ワイヤレスマウス',
                 'category' => '周辺機器',
                 'price' => 3980,
                 'in_stock' => true,
+                'model' => 'A123',
             ],
             (object) [
                 'name' => 'USBハブ',
                 'category' => '周辺機器',
                 'price' => 2480,
                 'in_stock' => false,
+                'model' => 'B456',
+            ],
+            (object) [
+                'name' => '液晶ディスプレイ',
+                'category' => '周辺機器',
+                'price' => 14800,
+                'in_stock' => false,
+                'model' => 'C789',
             ],
         ]);
 
